@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="a" data-name="未命名的渐变 35" x1="600" y1="1097.239" x2="600" y2="918.752" gradientTransform="matrix(1, 0, 0, -1, 0, 1200)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ebebeb" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#fefefe" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="b" data-name="未命名的渐变 36" x1="600" y1="749.583" x2="600" y2="587.006" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f7f7f7" stop-opacity="0"/>
+      <stop offset="0.106" stop-color="#f7f7f7" stop-opacity="0.16"/>
+      <stop offset="0.289" stop-color="#f7f7f8" stop-opacity="0.412"/>
+      <stop offset="0.465" stop-color="#f7f6f8" stop-opacity="0.622"/>
+      <stop offset="0.628" stop-color="#f7f6f9" stop-opacity="0.786"/>
+      <stop offset="0.775" stop-color="#f7f6f9" stop-opacity="0.903"/>
+      <stop offset="0.902" stop-color="#f7f6f9" stop-opacity="0.975"/>
+      <stop offset="0.994" stop-color="#f7f6f9"/>
+    </linearGradient>
+    <linearGradient id="c" data-name="未命名的渐变 29" x1="600" y1="547.261" x2="600" y2="227.261" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0d3d8"/>
+      <stop offset="0.044" stop-color="#d2d5da"/>
+      <stop offset="0.558" stop-color="#e6e8eb"/>
+      <stop offset="0.907" stop-color="#edeff1"/>
+      <stop offset="0.918" stop-color="#edeff1"/>
+      <stop offset="0.994" stop-color="#edeff1"/>
+    </linearGradient>
+    <linearGradient id="d" data-name="未命名的渐变 25" x1="600" y1="622.565" x2="600" y2="525.141" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e7e9ed"/>
+      <stop offset="0.994" stop-color="#e6e7ee"/>
+    </linearGradient>
+  </defs>
+  <title>插画</title>
+  <path d="M200,285s25.417-75.742,77.109-99.6c41.767-19.278,54.618-9.639,54.618-9.639s-9.813-46.783,32.128-64.258a90.494,90.494,0,0,1,70.683,0s-5.2-35,12.851-41.767C473.092,60.1,476.305,85.8,476.305,85.8s3.212-16.065,28.915-16.065,38.556,35.343,38.556,57.832c0,0,19.275-12.852,32.128,3.212,0,0,32.128-32.128,80.32,0,0,0,24.208-61.044,80.323-61.044,57.831,0,102.81,44.98,102.81,115.664,0,0,25.7-3.214,41.767,19.276,0,0,96.387-16.065,118.876,61.044V285Z" style="fill: url(#a)"/>
+  <circle cx="661.327" cy="348.64" r="32" style="fill: #fff"/>
+  <circle cx="547" cy="349" r="32" style="fill: #fff"/>
+  <path d="M600,577c-232.1,0-430.7,49.787-512,120.27V755H1112V697.27C1030.7,626.787,832.105,577,600,577Z" style="fill: url(#b)"/>
+  <path d="M745.373,390.373A32,32,0,0,0,722.745,381H477.255a32,32,0,0,0-22.628,9.373L400,445v64H800V445Z" style="fill: #d2d4d8"/>
+  <rect x="440" y="205" width="320" height="384" rx="32" style="fill: url(#c)"/>
+  <path d="M664,461v32a16,16,0,0,1-16,16H552a16,16,0,0,1-16-16V461a16,16,0,0,0-16-16H400V621a32,32,0,0,0,32,32H768a32,32,0,0,0,32-32V445H680A16,16,0,0,0,664,461Z" style="fill: url(#d)"/>
+  <rect x="472" y="253" width="256" height="64" rx="12" style="fill: #fff"/>
+  <rect x="472" y="341" width="256" height="16" rx="8" style="fill: #fff"/>
+  <rect x="472" y="381" width="128" height="16" rx="8" style="fill: #fff"/>
+  <g>
+    <line x1="787" y1="188" x2="806" y2="169" style="fill: #d9d9e0"/>
+    <rect x="783.065" y="174.5" width="26.87" height="8.001" transform="translate(107.071 615.492) rotate(-45)" style="fill: #d2d4d8"/>
+  </g>
+  <g>
+    <line x1="797" y1="213" x2="825.5" y2="203.5" style="fill: #d9d9e0"/>
+    <rect x="796.229" y="204.25" width="30.042" height="8.001" transform="translate(-24.221 267.259) rotate(-18.437)" style="fill: #d2d4d8"/>
+  </g>
+  <g>
+    <line x1="771" y1="174" x2="780.5" y2="145.5" style="fill: #d9d9e0"/>
+    <rect x="760.729" y="155.75" width="30.042" height="8.001" transform="translate(378.858 845.158) rotate(-71.563)" style="fill: #d2d4d8"/>
+  </g>
+</svg>

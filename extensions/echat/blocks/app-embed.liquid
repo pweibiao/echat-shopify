@@ -1,0 +1,59 @@
+
+ <script>
+{% if customer %}
+  var echatCustomer = {};
+  echatCustomer.id = "{{ customer.id }}";
+  echatCustomer.name = "{{ customer.name }}";
+  echatCustomer.email = "{{ customer.email }}";
+  echatCustomer.phone = "{{ customer.phone }}";
+  echatCustomer.adress = "{{ customer.default_address }}";
+  echatCustomer.adressList = "{{ customer.addresses }}";
+  echatCustomer.orders = "{{ customer.orders }}";
+{% endif %}
+
+{% if product %}
+  var echatProduct = {};
+  echatProduct.id = "{{ product.id }}";
+  echatProduct.description = "{{ product.description }}";
+  echatProduct.featured_image = "{{ product.featured_image }}";
+  echatProduct.price = "{{ product.price }}";
+  echatProduct.compare_at_price = "{{ product.compare_at_price }}";
+  echatProduct.title = "{{ product.title }}";
+  echatProduct.url = "{{ product.url }}";
+{% endif %}
+
+{% if order %}
+  var echatOrder = {};
+  echatOrder.id= "{{ order.id }}";
+  echatOrder.name = "{{ order.name }}";
+  echatOrder.note = "{{ order.note }}";
+  echatOrder.total_price = "{{ order.total_price }}";
+   echatOrder.order_status_url = "{{ order.order_status_url }}";
+  echatOrder.attributes = "{{ order.attributes }}";
+  echatOrder.billing_address = "{{ order.billing_address }}";
+  echatOrder.created_at = "{{ order.created_at }}";
+  echatOrder.financial_status = "{{ order.financial_status }}";
+  echatOrder.financial_status_label = "{{ order.financial_status_label }}";
+  echatOrder.fulfillment_status = "{{ order.fulfillment_status }}";
+  echatOrder.fulfillment_status_label = "{{ order.fulfillment_status_label }}";
+  echatOrder.line_items_subtotal_price = "{{ order.line_items_subtotal_price }}";
+{% endif %}
+
+{% if shop %}
+ var shopifyShopInfo = {};
+ shopifyShopInfo.name = "{{ shop.name }}"
+ shopifyShopInfo.id = "{{ shop.id }}"
+ shopifyShopInfo.domain = "{{ shop.domain }}"
+ shopifyShopInfo.currency = "{{ shop.currency }}"
+ shopifyShopInfo.url = "{{ shop.url }}"
+{% endif %}
+ </script>
+
+{% schema %}
+{
+  "name": "echat",
+  "target": "body",
+  "javascript": "echat.js",
+  "settings": []
+}
+{% endschema %}
