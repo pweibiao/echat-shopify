@@ -1,5 +1,5 @@
 build:
   docker:
     web: Dockerfile
-run:
-  web: bundle exec puma -C config/puma.rb
+  config:
+    SHOPIFY_API_KEY: 96231209f77059d37b2c971debd21d73
