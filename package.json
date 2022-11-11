@@ -8,6 +8,7 @@
     "build": "shopify app build",
     "dev": "shopify app dev",
     "start": "shopify app dev",
+    "serve": "shopify app dev",
     "info": "shopify app info",
     "scaffold": "shopify app scaffold",
     "deploy": "shopify app deploy"
