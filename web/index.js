@@ -452,7 +452,9 @@ export async function createServer (
 
     if (!appInstalled) {
       console.log('###############1',appInstalled)
-      console.log('###############appInstalled',appInstalled)
+      console.log('###############appInstalled',req)
+      console.log('###############appInstalled',res)
+      console.log('###############appInstalled',app)
       return redirectToAuth(req, res, app);
     }
 
