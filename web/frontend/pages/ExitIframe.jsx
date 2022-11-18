@@ -8,13 +8,18 @@ export default function ExitIframe() {
   const { search } = useLocation();
 
   useEffect(() => {
+    console.log("==========app:",app);
+    console.log("==========search:",search);
     if (!!app && !!search) {
       const params = new URLSearchParams(search);
       const redirectUri = params.get("redirectUri");
       const url = new URL(decodeURIComponent(redirectUri));
-
+      console.log("==========params:",params);
+      console.log("==========url:",url);
+      console.log("==========location:", location);
       if (url.hostname === location.hostname) {
         const redirect = Redirect.create(app);
+        console.log("==========redirect:", redirect);
         redirect.dispatch(
           Redirect.Action.REMOTE,
           decodeURIComponent(redirectUri)
