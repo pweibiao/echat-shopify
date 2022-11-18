@@ -361,10 +361,13 @@ export async function createServer (
       app.get("use-online-tokens")
     );
     let shopName = session.shop.split('.')[0]
+    console.log('getConfig',session)
+    console.log('getConfig',shopName)
     // 授权登录重定向地址
     const redirectUrl = 'https://' + session.shop + '/admin/apps/echat'
     // const requestUrl = `http://127.0.0.1:3000/shopify/getConfig?shopName=${shopName}`
     const requestUrl = `${baseReqUrl}/shopify/getConfig?shopName=${shopName}`
+    console.log('requestUrl',requestUrl)
     request(requestUrl, async function (error, response, body) {
       if (!error && response.statusCode == 200) {
         const result = JSON.parse(body).data
