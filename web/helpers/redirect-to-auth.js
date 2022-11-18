@@ -22,7 +22,7 @@ function clientSideRedirect(req, res) {
   const queryParams = new URLSearchParams({
     ...req.query,
     shop,
-    redirectUri: `https://${Shopify.Context.HOST_NAME}/api/auth?${redirectUriParams}`,
+    redirectUri: `https://${Shopify.Context.HOST_NAME}api/auth?${redirectUriParams}`,
   }).toString();
 
   return res.redirect(`/exitiframe?${queryParams}`);
