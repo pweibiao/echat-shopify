@@ -366,7 +366,7 @@ export async function createServer (
     // 授权登录重定向地址
     console.log('redirectUrl',session)
     console.log('redirectUrl2',Shopify)
-    const redirectUrl = 'https://' + session.shop + '/admin/apps/echat-7'
+    const redirectUrl = 'https://' + session.shop + '/admin/apps/'+Shopify.Context.API_KEY
     // const requestUrl = `http://127.0.0.1:3000/shopify/getConfig?shopName=${shopName}`
     const requestUrl = `${baseReqUrl}/shopify/getConfig?shopName=${shopName}`
     console.log('requestUrl',requestUrl)
