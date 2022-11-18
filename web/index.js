@@ -16,8 +16,8 @@ import { AppInstallations } from "./app_installations.js";
 import getAssets from './helpers/assets-list.js'
 // import { setConfig } from './helpers/companyConfig.js'
 import crypto from 'crypto'
-const baseReqUrl = 'https://apps.echatsoft.com:9443/testnode'
-// const baseReqUrl = 'https://middle-node.echatsoft.com'
+// const baseReqUrl = 'https://apps.echatsoft.com:9443/testnode'
+const baseReqUrl = 'https://middle-node.echatsoft.com'
 // const crypto = require('crypto');
 // import * as bodyParser from 'body-parser'
 import db from './db/connection.js'
