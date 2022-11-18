@@ -451,12 +451,15 @@ export async function createServer (
     const appInstalled = await AppInstallations.includes(shop);
 
     if (!appInstalled) {
+      console.log('###############1',appInstalled)
+      console.log('###############appInstalled',appInstalled)
       return redirectToAuth(req, res, app);
     }
 
     if (Shopify.Context.IS_EMBEDDED_APP && req.query.embedded !== "1") {
       const embeddedUrl = Shopify.Utils.getEmbeddedAppUrl(req);
-
+      console.log('###############2',req)
+      console.log('###############embeddedUrl',embeddedUrl)
       return res.redirect(embeddedUrl + req.path);
     }
 
