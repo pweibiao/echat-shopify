@@ -16,8 +16,8 @@ import { AppInstallations } from "./app_installations.js";
 import getAssets from './helpers/assets-list.js'
 // import { setConfig } from './helpers/companyConfig.js'
 import crypto from 'crypto'
-const baseReqUrl = 'https://apps.echatsoft.com:9443/testnode'
-// const baseReqUrl = 'https://middle-node.echatsoft.com'
+// const baseReqUrl = 'https://apps.echatsoft.com:9443/testnode'
+const baseReqUrl = 'https://middle-node.echatsoft.com'
 // const crypto = require('crypto');
 // import * as bodyParser from 'body-parser'
 import db from './db/connection.js'
@@ -368,6 +368,7 @@ export async function createServer (
     request(requestUrl, async function (error, response, body) {
       if (!error && response.statusCode == 200) {
         const result = JSON.parse(body).data
+        l'o'g
         const obj = {
           shopName: result.shop_name,
           companyId: result.company_id,
