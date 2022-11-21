@@ -368,7 +368,6 @@ export async function createServer (
     request(requestUrl, async function (error, response, body) {
       if (!error && response.statusCode == 200) {
         const result = JSON.parse(body).data
-        l'o'g
         const obj = {
           shopName: result.shop_name,
           companyId: result.company_id,
