@@ -285,13 +285,13 @@ export async function createServer (
           body: JSON.stringify(requestData)
         }, function (error2, response2, body2) {
           if (!error2 && response2.statusCode == 200) {
-            // console.log(body2) // 请求成功的处理逻辑
+            console.log('body2',body2) // 请求成功的处理逻辑
             if (body2.code == 200) {
               // res.json({ code: 200, data: body2.data })
               // 返回结果 前端修改状态为已授权
               res.json(result)
             }else{
-              res.json(result)
+              res.json({code:500,data:result.result})
             }
           }else{
             res.json(result)
