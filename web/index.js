@@ -252,12 +252,12 @@ export async function createServer (
     // 获取第三方接口公司信息
     // const requestUrl = `https://tappauth.rainbowred.com/lc/getInfo?authCode=${params.authCode}&appId=${params.appId}&tm=${params.tm}&nonce=${params.nonce}&signature=${params.signatrue}`
     const requestUrl = `https://appauth.echatsoft.com/lc/getInfo?authCode=${params.authCode}&appId=${params.appId}&tm=${params.tm}&nonce=${params.nonce}&signature=${params.signatrue}`
-    // console.log('requestUrl',requestUrl);
+    console.log('requestUrl',requestUrl);
     // 获取第三方接口公司信息
     request(requestUrl, async function (error, response, body) {
       if (!error && response.statusCode == 200) {
         const result = JSON.parse(body)
-        // console.log('body',result) // 请求成功的处理逻辑
+        console.log('body',result) // 请求成功的处理逻辑
         // 绑定公司信息参数
         var url = `${baseReqUrl}/shopify/updateCompanyConfig`;
         var requestData = {
