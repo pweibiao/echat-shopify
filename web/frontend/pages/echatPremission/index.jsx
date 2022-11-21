@@ -39,7 +39,7 @@ export default function EchatPremission() {
     const response = await fetch("/api/getConfig",initParams);
       if (response.ok) {
         let result = await response.json()
-        console.log('getCompanyInfo:2',result.data);
+        // console.log('getCompanyInfo:2',result.data);
         setCompanyInfo({...result.data}) 
         // if(result.data.appId){ // 已授权
         if(result.data.appId&&result.data.companyId){ // 已授权
@@ -59,7 +59,7 @@ export default function EchatPremission() {
     const response = await fetch(url,initParams);
       if (response.ok) {
         let result = await response.json()
-        console.log('getEchatCompanyInfo:3',result.result);
+        // console.log('getEchatCompanyInfo:3',result.result);
         getCompanyInfo()
         // if(result.successful==true){
         //   setType(2)
@@ -78,7 +78,7 @@ export default function EchatPremission() {
   useEffect(() => {
     // 获取authCode
     let authCode = searchParams.get('authCode');
-    console.log('1:authCode',authCode);
+    // console.log('1:authCode',authCode);
     // 根据获取到的authCode请求echat数据
     if(authCode){
       // 获取数据之后 1.存储数据库 2.切换成配置模式

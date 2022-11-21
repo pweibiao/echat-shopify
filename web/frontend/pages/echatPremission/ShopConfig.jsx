@@ -35,14 +35,14 @@ export default function ShopConfig(props) {
     
     if (response.ok) {
       let result = await response.json()
-      console.log( result.data);
+      // console.log( result.data);
       setIsLoading(false)
     } else {
       setIsLoading(false)
     }
   }
   const reBindPremission = ()=>{
-    console.log('reBindPremission');
+    // console.log('reBindPremission');
     setShowConfirm(true)
    
   }
@@ -64,7 +64,7 @@ export default function ShopConfig(props) {
     const response = await fetch("/api/getConfig",initParams);
       if (response.ok) {
         let result = await response.json()
-        console.log(result.data);
+        // console.log(result.data);
         setFormData({...result.data})
       } 
   },[])

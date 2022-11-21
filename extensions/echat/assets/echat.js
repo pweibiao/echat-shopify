@@ -403,7 +403,7 @@ const request_ENV = 'https://middle-node.echatsoft.com/shopify';
         shopName: window.Shopify.shop.split('.')[0]
       },
       callback: function (result) {
-        console.log('result',);
+        // console.log('result',);
 
         if (window.echatCustomer) {
           getMetaData(JSON.parse(result))

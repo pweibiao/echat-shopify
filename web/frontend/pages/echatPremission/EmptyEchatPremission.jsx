@@ -5,7 +5,7 @@ import { useLocation, useSearchParams } from 'react-router-dom';
 export default function EchatPremission(props) {
   
   useEffect(()=>{
-    console.log('props.companyInfo',props.companyInfo);
+    // console.log('props.companyInfo',props.companyInfo);
   },[props.companyInfo])
   const premissionHandle = ()=>{
     // 打开新页面

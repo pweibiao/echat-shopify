@@ -284,7 +284,7 @@ export async function createServer (
           body: JSON.stringify(requestData)
         }, function (error2, response2, body2) {
           if (!error2 && response2.statusCode == 200) {
-            console.log(body2) // 请求成功的处理逻辑
+            // console.log(body2) // 请求成功的处理逻辑
             if (body2.code == 200) {
               // res.json({ code: 200, data: body2.data })
               // 返回结果 前端修改状态为已授权
@@ -331,7 +331,7 @@ export async function createServer (
       body: JSON.stringify(requestData)
     }, function (error, response, body) {
       if (!error && response.statusCode == 200) {
-        console.log(body) // 请求成功的处理逻辑
+        // console.log(body) // 请求成功的处理逻辑
         if (body.code == 200) {
           res.json({ code: 200, data: body.data })
         }
