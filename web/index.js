@@ -290,7 +290,11 @@ export async function createServer (
               // res.json({ code: 200, data: body2.data })
               // 返回结果 前端修改状态为已授权
               res.json(result)
+            }else{
+              res.json(result)
             }
+          }else{
+            res.json(result)
           }
         });
 
@@ -336,6 +340,8 @@ export async function createServer (
         if (body.code == 200) {
           res.json({ code: 200, data: body.data })
         }
+      }else{
+        res.json(body)
       }
     });
     // let sql1 = 'select count(1) count from `company_config` where shop_name = ?;'
