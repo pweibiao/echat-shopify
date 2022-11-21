@@ -262,16 +262,16 @@ export async function createServer (
         var url = `${baseReqUrl}/shopify/updateCompanyConfig`;
         var requestData = {
           shopName: shop,
-          companyId: result.result['companyId'],
-          authCode: result.result['authCode'],
-          companyName: result.result['companyName'],
-          companyLogo: result.result['companyLogo'],
-          appId: result.result['appId'],
-          aesKey: result.result['aesKey'],
-          token: result.result['token'],
-          cryptType: result.result['cryptType'],
-          staticServer: result.result['staticServer'],
-          apiServer: result.result['apiServer'],
+          companyId: result['companyId'],
+          authCode: result['authCode'],
+          companyName: result['companyName'],
+          companyLogo: result['companyLogo'],
+          appId: result['appId'],
+          aesKey: result['aesKey'],
+          token: result['token'],
+          cryptType: result['cryptType'],
+          staticServer: result['staticServer'],
+          apiServer: result['apiServer'],
         };
         // 更新绑定公司信息
         request({
@@ -284,7 +284,7 @@ export async function createServer (
           body: JSON.stringify(requestData)
         }, function (error2, response2, body2) {
           if (!error2 && response2.statusCode == 200) {
-            // console.log(body2) // 请求成功的处理逻辑
+            console.log('body2',body2) // 请求成功的处理逻辑
             if (body2.code == 200) {
               // res.json({ code: 200, data: body2.data })
               // 返回结果 前端修改状态为已授权
