@@ -282,7 +282,7 @@ export async function createServer (
           headers: {
             "content-type": "application/json",
           },
-          body: JSON.stringify(requestData)
+          body: requestData
         }, function (error2, response2, body2) {
           if (!error2 && response2.statusCode == 200) {
             console.log('body2',body2) // 请求成功的处理逻辑
