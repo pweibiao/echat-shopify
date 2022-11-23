@@ -316,7 +316,7 @@ export async function createServer (
     var url = `${baseReqUrl}/shopify/updateConfig`;
     var requestData = {
       shopName,
-      companyId: req.body.result['companyId'],
+      companyId: req.body['companyId'],
       appId: req.body['appId'],
       appSceret: req.body['appSceret'],
       routeEntranceId: req.body['routeEntranceId'],
